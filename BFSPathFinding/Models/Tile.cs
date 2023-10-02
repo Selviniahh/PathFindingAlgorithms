@@ -45,7 +45,7 @@ public class Tile : Sprite
         }
         else if (Visited)
         {
-            Color = Color.Aquamarine;
+            Color = VisitColor;
         }
         else
         {

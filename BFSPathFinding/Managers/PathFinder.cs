@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using BFSPathFinding.Models;
 using Microsoft.Xna.Framework;
@@ -9,11 +12,21 @@ public static class PathFinder
 {
     class Node
     {
-        public readonly int X;
-        public readonly int Y;
+        public readonly int X; //Relative indexes
+        public readonly int Y; //Relative indexes
         public Node Parent;
         public bool Visited;
 
+        //A* implementation
+        public int Hcost = 0; // Current to goal cost. We need to manually calculate HCost with using GoalX and GoalY. 
+        public int GCost = 0; // Current to Start cost. Every time we move, it means we are adding +1 to GCost for the current node. 
+        public int FCost => GCost + Hcost;
+
+        public static int GetHCost(int x1, int y1, int x2, int y2)
+        {
+            return Math.Abs(x1 - x2) + Math.Abs(y1 - y2);
+        }
+        
         public Node(int x, int y)
         {
             this.X = x;
@@ -21,7 +34,7 @@ public static class PathFinder
         }
     }
 
-    private static Node[,] _nodeMap;
+        private static Node[,] _nodeMap;
         private static Map _map;
         private static readonly int[] row = { -1, 1, 0, 0 };  // Up, Down, Left, Right
         private static readonly int[] col = { 0, 0, -1, 1 };  // Corresponding to the rows
@@ -56,22 +69,26 @@ public static class PathFinder
             }
         }
 
-        public static async Task<List<Vector2>> BFSearch(int goalX, int goalY)
+        public static async void BFSearch(int goalX, int goalY)
         {
             CreateNodeMap();
-            Queue<Node> q = new Queue<Node>();
+            List<Node> openList = new List<Node>(); //List of nodes
+            (int startX, int startY) = _map.ScreenToMap(new Vector2(0,0)); //Start at first tile
             
-            var start = _nodeMap[0, 0];
+            //Determine the start mark it visited and calculate the H cost. 
+            Node start = _nodeMap[startX, startY];
             start.Visited = true;
-            q.Enqueue(start);
-
-            while (q.Count > 0)
+            start.Hcost = Node.GetHCost(startX, startY, goalX, goalY);
+            openList.Add(start); //We added something to the list so we can start while loop
+            
+            while (openList.Count > 0)
             {
-                Node curr = q.Dequeue();
-
-                if (curr.X == goalX && curr.Y == goalY) //We found the path!
+                Node curr = openList.OrderBy(n => n.FCost).First(); //Find the lowest Fcost one inside node list
+                openList.Remove(curr);
+                if (curr.X == goalX && curr.Y == goalY) //If the path is found, retrace
                 {
-                    return RetracePath(goalX,goalY);
+                    RetracePath(goalX, goalY);
+                    return;
                 }
 
                 for (int i = 0; i < row.Length; i++)
@@ -79,19 +96,33 @@ public static class PathFinder
                     int newX = curr.X + row[i];
                     int newY = curr.Y + col[i];
 
-                    if (IsValid(newX,newY) && !_nodeMap[newX,newY].Visited)
+                    if (IsValid(newX,newY) && !_nodeMap[newX,newY].Visited) //Valid and not visited? 
                     {
-                        q.Enqueue(_nodeMap[newX,newY]);
-                        _nodeMap[newX,newY].Visited = true;
+                        Node neighbour = _nodeMap[newX, newY];
+                        int costToMove = curr.GCost + 1; //Since every time it moving, it costs +1 more for every neighbour. 
+
+                        if (costToMove < neighbour.GCost || !openList.Contains(neighbour)) //Couldn't understand what is this if block for 
+                        {
+                            neighbour.GCost = costToMove;
+                            neighbour.Hcost = Node.GetHCost(newX, newY, goalX, goalY);
+                            neighbour.Parent = curr;
+                            _map.Tiles[newX, newY].VisitColor = Color.DarkGray;
+                            openList.Add(neighbour);
+                        }
+                        else
+                        {
+                            Debug.WriteLine("Sa");
+                        }
+
+                        _nodeMap[newX, newY].Visited = true; 
                         _map.Tiles[newX, newY].Visited = true;
-                        _nodeMap[newX,newY].Parent = curr;
+
                     }
                 }
-
                 await Task.Delay(25);
             }
 
-            return null; //If nothing found return null
+            return; //If nothing found return null
         }
 
         private static List<Vector2> RetracePath(int goalX, int goalY)
