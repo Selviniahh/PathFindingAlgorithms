@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFSPathFinding", "BFSPathFinding\BFSPathFinding.csproj", "{0410CF0C-C2B4-4CA8-B47A-DC7D26F1D816}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar", "AStar\AStar.csproj", "{18D994F2-D540-473D-9744-88C4DB46FE71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFSPathFinding", "BFS\BFSPathFinding.csproj", "{3EC7BEC4-FCB8-421F-8A58-BBBC6C1A3C8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0410CF0C-C2B4-4CA8-B47A-DC7D26F1D816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0410CF0C-C2B4-4CA8-B47A-DC7D26F1D816}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0410CF0C-C2B4-4CA8-B47A-DC7D26F1D816}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0410CF0C-C2B4-4CA8-B47A-DC7D26F1D816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D994F2-D540-473D-9744-88C4DB46FE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D994F2-D540-473D-9744-88C4DB46FE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D994F2-D540-473D-9744-88C4DB46FE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D994F2-D540-473D-9744-88C4DB46FE71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC7BEC4-FCB8-421F-8A58-BBBC6C1A3C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC7BEC4-FCB8-421F-8A58-BBBC6C1A3C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC7BEC4-FCB8-421F-8A58-BBBC6C1A3C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC7BEC4-FCB8-421F-8A58-BBBC6C1A3C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

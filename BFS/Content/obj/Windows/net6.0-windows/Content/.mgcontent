@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/xqwys/RiderProjects/BFSPathFinding/BFSPathFinding/Content/hero.png</File>
-    <File>C:/Users/xqwys/RiderProjects/BFSPathFinding/BFSPathFinding/Content/tile.png</File>
+    <File>C:/Users/xqwys/RiderProjects/BFSPathFinding/BFS/Content/hero.png</File>
+    <File>C:/Users/xqwys/RiderProjects/BFSPathFinding/BFS/Content/tile.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

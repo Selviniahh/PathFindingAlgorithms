@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qM90GwFv25nWt85CqDuXxEvXfke08pardsVXLvkWT6E8n0RsC0qL+oMi4se7UcwGg5LlCW5q44EE5Lo+rRfQLQ==",
+  "dgSpecHash": "pfSUl+k7MaywC/pr4W90CSNQmHdeGhcfAPgIuH6JpiLafM6mOs09LypEK+43A5YL5tVy1Jyx7DcWtcS8dTQmEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\BFSPathFinding\\BFSPathFinding.csproj",
+  "projectFilePath": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\BFS\\BFSPathFinding.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xqwys\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\xqwys\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",

@@ -1,0 +1,7 @@
+# Jetbrains Rider 
+.idea/
+*.DotSettings.user
+
+#MonoGame
+bin/
+obj/
