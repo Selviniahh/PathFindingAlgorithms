@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/xqwys/RiderProjects/BFSPathFinding/AStar/Content/hero.png</SourceFile>
-  <SourceTime>2023-07-29T00:24:04.2503178-04:00</SourceTime>
-  <DestFile>C:/Users/xqwys/RiderProjects/BFSPathFinding/AStar/Content/bin/Windows/Content/hero.xnb</DestFile>
-  <DestTime>2023-10-02T11:21:44.3813335-04:00</DestTime>
+  <SourceFile>C:/Users/xqwys/RiderProjects/PathFindingAlgorithms/AStar/Content/hero.png</SourceFile>
+  <SourceTime>2023-11-27T20:38:34.1473047-05:00</SourceTime>
+  <DestFile>C:/Users/xqwys/RiderProjects/PathFindingAlgorithms/AStar/Content/bin/Windows/Content/hero.xnb</DestFile>
+  <DestTime>2023-11-27T20:39:22.6035588-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T07:44:56-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

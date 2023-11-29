@@ -31,7 +31,7 @@ public class Tile : Sprite
 
             if (InputManager.MouseRightClicked)
             {
-                PathFinder.BFSearch(_mapX, _mapY);
+                PathFinder.AStar(_mapX, _mapY);
             }
         }
 

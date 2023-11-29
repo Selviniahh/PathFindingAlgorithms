@@ -6,7 +6,7 @@ namespace AStar.Models;
 //do not forget this class makes Tile array and updates those. Tile class is just tile class and this class makes 2d tile array 
 public class Map 
 {
-    public readonly Point Size = new Point(10, 10);
+    public readonly Point Size = new Point(100, 100);
     public Tile[,] Tiles { get; }
     public Point TileSize { get; }
 

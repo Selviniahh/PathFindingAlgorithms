@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\AStar\\AStar.csproj": {}
+    "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\AStar\\AStar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\AStar\\AStar.csproj": {
+    "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\AStar\\AStar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\AStar\\AStar.csproj",
+        "projectUniqueName": "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\AStar\\AStar.csproj",
         "projectName": "AStar",
-        "projectPath": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\AStar\\AStar.csproj",
+        "projectPath": "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\AStar\\AStar.csproj",
         "packagesPath": "C:\\Users\\xqwys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\AStar\\obj\\",
+        "outputPath": "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\AStar\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xqwys\\AppData\\Roaming\\NuGet\\NuGet.Config",

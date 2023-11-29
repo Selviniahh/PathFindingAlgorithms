@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/xqwys/RiderProjects/BFSPathFinding/AStar/Content/hero.png</File>
-    <File>C:/Users/xqwys/RiderProjects/BFSPathFinding/AStar/Content/tile.png</File>
+    <File>C:/Users/xqwys/RiderProjects/PathFindingAlgorithms/AStar/Content/hero.png</File>
+    <File>C:/Users/xqwys/RiderProjects/PathFindingAlgorithms/AStar/Content/tile.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

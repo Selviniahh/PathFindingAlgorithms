@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\BFS\\BFSPathFinding.csproj": {}
+    "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\BFS\\BFSPathFinding.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\BFS\\BFSPathFinding.csproj": {
+    "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\BFS\\BFSPathFinding.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\BFS\\BFSPathFinding.csproj",
+        "projectUniqueName": "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\BFS\\BFSPathFinding.csproj",
         "projectName": "BFSPathFinding",
-        "projectPath": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\BFS\\BFSPathFinding.csproj",
+        "projectPath": "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\BFS\\BFSPathFinding.csproj",
         "packagesPath": "C:\\Users\\xqwys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\BFS\\obj\\",
+        "outputPath": "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\BFS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xqwys\\AppData\\Roaming\\NuGet\\NuGet.Config",

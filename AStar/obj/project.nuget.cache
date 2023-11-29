@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7C+5EeA1GPv5GLmVUsnVTKKAK9FbQcMKBgn7ZCfVpgA7g7tJeoX4e1l5yW7WNEifC6H7DuouRhZS/k3+H0LX5A==",
+  "dgSpecHash": "nFzMjBabayIN2gv89RVqD5t7C4KPsj6KiwD6Agq+Wdvk+2aVZbPT2+K1fSKVe9QJRBOmJ/wkxHc46WAfsXnS1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xqwys\\RiderProjects\\BFSPathFinding\\AStar\\AStar.csproj",
+  "projectFilePath": "C:\\Users\\xqwys\\RiderProjects\\PathFindingAlgorithms\\AStar\\AStar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xqwys\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\xqwys\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
